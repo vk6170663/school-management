@@ -11,7 +11,7 @@
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+    
     <title>Document</title>
   </head>
   <body>
@@ -26,11 +26,11 @@
             />
           </div>
           <nav class="">
-            <ul class="flex flex-col gap-6">
+            <ul class="flex flex-col gap-3">
               <li class="">
                 <a
                   href="../index.html"
-                  class="flex items-center gap-3 text-gray-400 font-bold text-lg"
+                  class="flex items-center gap-3 text-gray-400 font-bold"
                   ><svg
                     class="h-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@
               <li class="">
                 <a
                   href="#"
-                  class="flex items-center gap-3 text-gray-400 font-bold mb-4 text-lg"
+                  class="flex items-center gap-3 text-gray-400 font-bold mb-2"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -71,13 +71,12 @@
                   <span>Student</span>
                   <button>
                     <svg
-                      class="h-5"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6"
+                      class="h-5"
                     >
                       <path
                         stroke-linecap="round"
@@ -87,11 +86,11 @@
                     </svg>
                   </button>
                 </a>
-                <ul class="text-sm">
+                <ul class="text-sm flex flex-col gap-2 ps-4">
                   <li>
                     <a
                       href="./student.html"
-                      class="flex items-center gap-3 text-slate-200 font-bold text-lg"
+                      class="flex items-center gap-3 text-slate-200 font-semibold"
                       ><svg
                         class="h-5"
                         xmlns="http://www.w3.org/2000/svg"
@@ -111,12 +110,35 @@
                       <span>Add Student</span>
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="./all-students.html"
+                      class="flex items-center gap-3 text-slate-200 font-semibold"
+                      ><svg
+                        class="h-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 4.5v15m7.5-7.5h-15"
+                        />
+                      </svg>
+
+                      <span>All Student</span>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="">
                 <a
                   href="#"
-                  class="flex items-center gap-3 text-gray-400 font-bold text-lg"
+                  class="flex items-center gap-3 text-gray-400 font-bold"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -138,7 +160,7 @@
               <li class="">
                 <a
                   href="#"
-                  class="flex items-center gap-3 text-gray-400 font-bold text-lg"
+                  class="flex items-center gap-3 text-gray-400 font-bold"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -160,7 +182,7 @@
               <li class="">
                 <a
                   href="#"
-                  class="flex items-center gap-3 text-gray-400 font-bold text-lg"
+                  class="flex items-center gap-3 text-gray-400 font-bold"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -245,7 +267,7 @@
           </div>
         </form> -->
       </nav>
-      <main class="p-2 sm:p-5">
+      <main class="p-2 sm:px-5">
         <div>
           <form action="">
             <div
@@ -253,7 +275,7 @@
             >
               <h3 class="text-xl font-medium text-gray-500">Add Student</h3>
               <button
-                class="sm-mt-0 mt-5 bg-indigo-700 text-slate-50 font-semibold py-2 px-4 rounded-lg uppercase"
+                class="sm:mt-0 mt-5 bg-indigo-700 text-slate-50 font-semibold py-2 px-4 rounded-lg uppercase"
               >
                 &#x2b; Import Student
               </button>

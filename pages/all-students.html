@@ -10,12 +10,21 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Document</title>
   </head>
   <body>
-    <div class="grid grid-cols-[200px_auto]">
+    <div class="grid grid-cols-[220px_auto]">
       <aside class="row-span-12">
         <div class="flex flex-col px-6 pt-3 bg-gray-700 h-full">
           <div>
@@ -205,7 +214,7 @@
           </nav>
         </div>
       </aside>
-      <nav class="flex items-center justify-between p-3 mb-5">
+      <nav class="flex items-center justify-between p-3">
         <h2 class="font-semibold text-2xl">Dashboard</h2>
 
         <div>
@@ -224,63 +233,21 @@
             />
           </svg>
         </div>
-
-        <!-- <form class="w-2/4 mx-auto">
-          <label
-            for="default-search"
-            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-            >Search</label
-          >
-          <div class="relative">
-            <div
-              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-            >
-              <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-            </div>
-            <input
-              type="search"
-              id="default-search"
-              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search Mockups, Logos..."
-              required
-            />
-            <button
-              type="submit"
-              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Search
-            </button>
-          </div>
-        </form> -->
       </nav>
       <main class="p-2 sm:px-5">
-        <div>
+        <div class="border-b-2">
           <form action="">
             <div
               class="flex sm:flex-row flex-col items-center justify-between mb-6"
             >
-              <h3 class="text-xl font-medium text-gray-500">Add Student</h3>
+              <h3 class="text-xl font-medium text-gray-500">Manage Student</h3>
               <button
                 class="sm:mt-0 mt-5 bg-indigo-700 text-slate-50 font-semibold py-2 px-4 rounded-lg uppercase"
               >
-                &#x2b; Import Student
+                &#x2b; Add Student
               </button>
             </div>
-            <div
+            <!-- <div
               class="flex lg:flex-row flex-col items-center justify-between pb-5 border-b-2 mb-11"
             >
               <ul
@@ -321,227 +288,99 @@
               >
                 Save Student
               </button>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-              <div class="px-3 sm:px-8">
-                <h3 class="text-sm text-blue-900 font-semibold border-b-2 pb-2">
-                  FATHERS INFO
-                </h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 pt-5">
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >FATHER NAME</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >OCCUPATION</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >FATHER PHONE</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="tel"
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >FATHERS PHOTO</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="file"
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >MOTHER NAME</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >OCCUPATION</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >MOTHER PHONE</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="tel"
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >MOTHERS PHOTO</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="file"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="px-3 sm:px-8">
-                <h3 class="text-sm text-blue-900 font-semibold border-b-2 pb-2">
-                  GUARDIAN INFO
-                </h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 pt-5">
-                  <!-- <div class="col-span-full mb-8">
-                    <div class="flex items-center justify-between">
-                      <h3 class="text-sm text-blue-900 font-semibold">
-                        RELATION WITH GUARDIAN
-                      </h3>
-                      <div class="flex items-center gap-5">
-                        <input
-                          class="border px-5 py-3 text-gray-400 rounded-lg"
-                          type="radio"
-                          value="Father"
-                          id="father"
-                          name="guardian_relation"
-                        />
-                        <label
-                          for="father"
-                          class="text-gray-400 font-medium text-md"
-                          >Father
-                        </label>
-                      </div>
-                      <div class="flex items-center gap-5">
-                        <input
-                          class="border px-5 py-3 text-gray-400 rounded-lg"
-                          type="radio"
-                          value="Mother"
-                          id="mother"
-                          name="guardian_relation"
-                        />
-                        <label
-                          for="mother"
-                          class="text-gray-400 font-medium text-md"
-                          >Mother
-                        </label>
-                      </div>
-                      <div class="flex items-center gap-5">
-                        <input
-                          class="border px-5 py-3 text-gray-400 rounded-lg"
-                          type="radio"
-                          value="Others"
-                          id="others"
-                          name="guardian_relation"
-                        />
-                        <label
-                          for="others"
-                          class="text-gray-400 font-medium text-md"
-                          >Others</label
-                        >
-                      </div>
-                    </div>
-                  </div> -->
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >GUARDIANS NAME
-                    </label>
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >RELATION WITH GUARDIAN
-                    </label>
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >GUARDIANS EMAIL</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="email"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >GUARDIAN PHOTO</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="file"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >GUARDIANS PHONE</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="tel"
-                      name=""
-                      id=""
-                    />
-                  </div>
+            </div> -->
 
-                  <div class="flex flex-col mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >GUARDIAN OCCUPATION</label
-                    >
-                    <input
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      type="text"
-                      name=""
-                      id=""
-                    />
-                  </div>
-                  <div class="flex flex-col col-span-full mb-5">
-                    <label for="" class="text-gray-400 font-medium text-xs pb-3"
-                      >GUARDIAN ADDRESS</label
-                    >
-                    <textarea
-                      class="border px-5 py-3 text-gray-400 text-sm"
-                      name=""
-                      id=""
-                      rows="2"
-                    ></textarea>
-                  </div>
+            <div class="px-3 sm:px-8">
+              <h3 class="text-sm text-blue-900 font-semibold border-b-2 pb-2">
+                SELECT CRITERIA
+              </h3>
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-8 pt-5">
+                <div class="flex flex-col mb-5">
+                  <label for="" class="text-gray-400 font-medium text-xs pb-3"
+                    >ACADEMIC YEAR</label
+                  >
+                  <select class="border px-5 py-3 text-gray-400 text-sm">
+                    <option value="">Acedmic year</option>
+                    <option value="">2024 [Jan-Dec]</option>
+                  </select>
+                </div>
+                <div class="flex flex-col mb-5">
+                  <label for="" class="text-gray-400 font-medium text-xs pb-3"
+                    >CLASS</label
+                  >
+                  <select class="border px-5 py-3 text-gray-400 text-sm">
+                    <option value="">Class</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                </div>
+                <div class="flex flex-col mb-5">
+                  <label for="" class="text-gray-400 font-medium text-xs pb-3"
+                    >SECTION</label
+                  >
+                  <select class="border px-5 py-3 text-gray-400 text-sm">
+                    <option value="">Section</option>
+                    <option value="">A</option>
+                    <option value="">B</option>
+                  </select>
+                </div>
+                <div class="flex flex-col mb-5">
+                  <label for="" class="text-gray-400 font-medium text-xs pb-3"
+                    >SEARCH BY NAME</label
+                  >
+                  <input
+                    class="border px-5 py-3 text-gray-400 text-sm"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="flex flex-col mb-5">
+                  <label for="" class="text-gray-400 font-medium text-xs pb-3"
+                    >SEARCH BY ROLL</label
+                  >
+                  <input
+                    class="border px-5 py-3 text-gray-400 text-sm"
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="Roll No"
+                  />
+                </div>
+                <div class="flex flex-col items-end justify-center">
+                  <button
+                    class="sm:mt-0 mt-5 bg-indigo-700 text-slate-50 font-semibold py-2 px-4 rounded-lg uppercase"
+                  >
+                    &#x2b; Search
+                  </button>
                 </div>
               </div>
             </div>
           </form>
+        </div>
+        <div class="p-5 flex items-center justify-between">
+          <h3 class="text-xl font-medium text-gray-500">Student List</h3>
+          <div class="flex items-center gap-2">
+            <ion-icon name="search-outline"></ion-icon>
+            <input
+              class="focus:border-white"
+              type="text"
+              placeholder="Quick Search"
+            />
+          </div>
+          <div class="border">
+            <!-- <ion-icon
+              name="print-outline"
+              class="border bg-transparent p-3"
+            ></ion-icon> -->
+          </div>
+        </div>
+        <div>
+          <header></header>
         </div>
       </main>
       <footer class="col-start-2 border-t-2 mt-5">
